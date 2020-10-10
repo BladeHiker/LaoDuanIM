@@ -1,0 +1,128 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #8fa4bd;
+}
+
+#box {
+    margin: 0 0 0 0;
+    background-color: #eee;
+    overflow-x: hidden;
+}
+red{
+    color: red;
+}
+msg {
+    display: block;
+    text-align: left;
+    font-size: 25px;
+    word-break: break-all;
+    animation: msg-in 0.5s ease-in;
+    -webkit-animation: msg-in 0.5s ease-in;
+}
+sys-msg {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    word-break: break-all;
+    animation: msg-in 0.5s ease-in;
+    -webkit-animation: msg-in 0.5s ease-in;
+}
+name{
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+}
+#tips{
+    display:block;
+    width: 100vw;
+    height: 20px;
+    z-index: 1000;
+    background-color: rgb(31, 141, 214);
+}
+note{
+    display: block;
+    color: rgb(31, 141, 214);
+    text-align: left;
+    font-style: normal;
+    font-size: 10px;
+    word-break: break-all;
+    animation: msg-in 0.1s ease-in;
+    -webkit-animation: msg-in 0.1s ease-in;
+}
+time-note{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+    word-break: break-all;
+}
+
+#inp {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    clear: both;
+}
+
+#input {
+    display: block;
+    width: 100vw;
+    height: 80px;
+    padding: 0 0 0 0;
+    margin-bottom: 0;
+    border-width: 2px 0 1px 0;
+    border-color: black black rgb(31, 141, 214) black;
+    word-break: break-all;
+    font-size: 20px;
+    resize: none;
+}
+
+#Messages {
+    display: block;
+    clear: both;
+    scroll-behavior: smooth;
+}
+
+#inp::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@keyframes msg-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(100px);
+    }
+}
+
+@-webkit-keyframes msg-in {
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(100px);
+    }
+}
